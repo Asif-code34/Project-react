@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+  margin :0;
+  padding:0;
+  font-family: 'Merriweather', serif;
+}
+.home {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  background-color: #a9a9a92b;
+  z-index: 0;
+}
+.content h1 {
+  color: rgb(67 0 86);
+  font-weight: bold;
+  margin-left: 23px;
+  font-size: 55px;
+  text-shadow: -1px 1px 1px black;
+  #span2 {
+    color: #ffc800;
+}
+}
+.home .img {
+  flex: 1 1 300px;
+}
+.home .img img {
+  margin-top: 30px;
+  width: 100%;
+}
+#product-cards {
+  margin-top: 100px;
+}
+#product-cards h1 {
+  color: #ffc800;
+  text-shadow: 1px 1px 1px black;
+  border-bottom: 2px solid #ffc800;
+  text:center;
+  
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem; }
+
+  #product-cards .card h3 {
+    font-size: 20px;
+    color: black;
+}
+#product-cards .card p {
+  font-size: 12px;
+  margin-top: 5px;
+  color: black;
+}
+#other-cards {
+  margin-top: 30px;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+}
+
+
+.py-md-0 {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+.py-3 {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+}
+
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;}
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  border-radius: calc(0.25rem - 1px);
+}
+#other-cards .card h3 {
+  margin-top: 30px;
+  color: black;
+  margin-left: 10px;
+  letter-spacing: 3px;
+}
+#other-cards .card h5 {
+  margin-top: 15px;
+  font-weight: 100;
+  font-size: 18px;
+  color: black;
+  margin-left: 10px;
+  letter-spacing: 3px;
+  border-bottom: 2px solid black;
+  width: 220px;
+}
+#other-cards .card p {
+  margin-top: 10px;
+  font-weight: 100;
+  font-size: 15px;
+  color: black;
+  margin-left: 10px;
+  letter-spacing: 3px;
+}
+#shopnow {
+  width: 130px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+  letter-spacing: 3px;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+#newslater {
+  margin-top: 100px;
+}
+#newslater h3 {
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+.input {
+  margin-top: 30px;
+}
+.input input {
+  width: 350px;
+  height: 36px;
+  letter-spacing: 2px;
+  border-radius: 3px;
+  border: 1px solid black;
+  padding-left: 5px;
+}
+#subscribe {
+  width: 200px;
+  height: 36px;
+  margin-left: 10px;
+  border-radius: 3px;
+  border: none;
+  background-color: #ffc800;
+  color: white;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-shadow: 0px 0px 1px black;
+}
+#offer {
+  margin-top: 100px;
+}
+#offer i {
+  font-size: 32px;
+  color: black;
+}
+.fa-solid {
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+}
+#footer {
+  padding: 0 0 30px 0px;
+  color: white;
+  font-size: 14px;
+  background-color: rgb(67 0 86);
+  margin-top: 100px;
+}
+#footer .footer-top {
+  padding: 60px 0 30px 0;
+  background-color: rgb(67 0 86);
+  color: white;
+}
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+#footer .footer-top .footer-contact h3 {
+  color: #ffc800;
+}
+#footer .footer-top .footer-contact p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+
+  color: white;
+}
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+#footer .footer-top .footer-links h4 {
+  color: #ffc800;
+}
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+}
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+#footer .footer-top .footer-links ul li a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  line-height: 1;
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+#footer .footer-top .socail-links a {
+  font-size: 18px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #373737;
+  color: white;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  transition: 0.5s ease;
+}

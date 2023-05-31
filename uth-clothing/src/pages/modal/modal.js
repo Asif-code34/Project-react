@@ -1,13 +1,17 @@
-import React, {  useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import axios from 'axios'
 
-const Login = () => {
+import React, {  useEffect, useState,useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import { AppContext } from '../../App';
+
+
+const Modal = () => {
+  const{showmodalpop,showmodalogin} = useContext(AppContext)
   const [Username, setUsername] = useState("");
   const [Password, setPassword] = useState("");
   const [isLogin, setisLogin] = useState(false);
   const [isUser, setIsUser] = useState(false);
-  const[isAdmin,setIsadmin] =useState(false)
+  const[isAdmin,setIsadmin] =useState(false);
   const  navigate =useNavigate()
   useEffect(() => {
     let ls = localStorage.getItem("isLogin");
@@ -29,7 +33,7 @@ const Login = () => {
     e.preventDefault();
     if (Username === "admin" && Password === "123") {
       //setisLogin(true)
-      localStorage.setItem("isLogin", true);
+      localStorage.setItem("isLogin",true);
        localStorage.setItem("isAdmin",true);
        navigate('/addproduct')
       window.location.reload();//we reload our page here so that logout button will show after login
@@ -64,15 +68,24 @@ const Login = () => {
       alert("please check credentials")
     }   */}
     
-
-    };
-  }
+    } }
+    const close=()=>{
+      showmodalogin()
+    }
   return (
-    <div className='col-6 offset-3'>
+    <div className="modal" tabindex="-1" style={{display:"block",marginTop:"90px"}}>
+    <div className="modal-dialog">
+      <div className="modal-content">
+        <div className="modal-header">
+          <h5 className="modal-title text-center">Electro-World</h5>
+          <button type="button" className="btn-close" data-bs-dismiss="modal" onClick={()=>close()} aria-label="Close"></button>
+        </div>
+        <div className="modal-body">
+        <div>
      {/* {(isLogin && <Navigate to={"/addproduct"} replace={true}></Navigate>) ||
       (isUser && <Navigate to={"/dashboard"} replace={true}></Navigate>)*/}
       <form onSubmit={(e) => submitHandler(e)}>
-        <div class="mb-3">
+        <div className="mb-3">
           
           <label htmlFor="exampleInputUsername" className="form-label"> Username</label>
           <input type="text" className="form-control" id="exampleInputEmail1" value= {Username} placeholder='username' onChange={(e) => UserHandle("Username", e)} />
@@ -87,7 +100,13 @@ const Login = () => {
       </form>
 
     </div>
-  );
+  
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  )
 };
 
-export default Login;
+export default Modal;
